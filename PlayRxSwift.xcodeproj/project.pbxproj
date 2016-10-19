@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23607F251B6AEDF8D1BE91E8 /* Pods_PlayRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B61A438E8491421B11576 /* Pods_PlayRxSwift.framework */; };
+		341850FED7B12796B408A324 /* Pods_PlayRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AE54184826AB833817DA29 /* Pods_PlayRxSwiftTests.framework */; };
 		E9B1C79B1DB464C100B07F76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1C79A1DB464C100B07F76 /* AppDelegate.swift */; };
 		E9B1C79D1DB464C100B07F76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1C79C1DB464C100B07F76 /* ViewController.swift */; };
 		E9B1C7A01DB464C100B07F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B1C79E1DB464C100B07F76 /* Main.storyboard */; };
@@ -25,7 +27,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E9B1C7D81DB46B4E00B07F76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		240B61A438E8491421B11576 /* Pods_PlayRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69B5BD47646C06F783D6EF35 /* Pods-PlayRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayRxSwift/Pods-PlayRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		7FDDAD5674289F989CCD3E4F /* Pods-PlayRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayRxSwift/Pods-PlayRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B0BD0486A3BA7BFB982C0637 /* Pods-PlayRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRxSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayRxSwiftTests/Pods-PlayRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6AE54184826AB833817DA29 /* Pods_PlayRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D711440068F03F6FB93A8A47 /* Pods-PlayRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRxSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayRxSwiftTests/Pods-PlayRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B1C7971DB464C100B07F76 /* PlayRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B1C79A1DB464C100B07F76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9B1C79C1DB464C100B07F76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23607F251B6AEDF8D1BE91E8 /* Pods_PlayRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +72,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341850FED7B12796B408A324 /* Pods_PlayRxSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C769DFADA385292E9EC45ADD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FDDAD5674289F989CCD3E4F /* Pods-PlayRxSwift.debug.xcconfig */,
+				69B5BD47646C06F783D6EF35 /* Pods-PlayRxSwift.release.xcconfig */,
+				D711440068F03F6FB93A8A47 /* Pods-PlayRxSwiftTests.debug.xcconfig */,
+				B0BD0486A3BA7BFB982C0637 /* Pods-PlayRxSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEF4F16F48AF1CEC8747679D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				240B61A438E8491421B11576 /* Pods_PlayRxSwift.framework */,
+				B6AE54184826AB833817DA29 /* Pods_PlayRxSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9B1C78E1DB464C100B07F76 = {
 			isa = PBXGroup;
 			children = (
 				E9B1C7991DB464C100B07F76 /* PlayRxSwift */,
 				E9B1C7AE1DB464C200B07F76 /* PlayRxSwiftTests */,
 				E9B1C7981DB464C100B07F76 /* Products */,
+				C769DFADA385292E9EC45ADD /* Pods */,
+				DEF4F16F48AF1CEC8747679D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +148,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B1C7B41DB464C200B07F76 /* Build configuration list for PBXNativeTarget "PlayRxSwift" */;
 			buildPhases = (
+				AFF03948F1B38F9CD7546D04 /* [CP] Check Pods Manifest.lock */,
 				E9B1C7931DB464C100B07F76 /* Sources */,
 				E9B1C7941DB464C100B07F76 /* Frameworks */,
 				E9B1C7951DB464C100B07F76 /* Resources */,
+				7E2A3E986EAFA1E746D59417 /* [CP] Embed Pods Frameworks */,
+				489771850F1511B17C898303 /* [CP] Copy Pods Resources */,
+				E9B1C7D81DB46B4E00B07F76 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9B1C7B71DB464C200B07F76 /* Build configuration list for PBXNativeTarget "PlayRxSwiftTests" */;
 			buildPhases = (
+				9547F857760629F41AC637E7 /* [CP] Check Pods Manifest.lock */,
 				E9B1C7A71DB464C200B07F76 /* Sources */,
 				E9B1C7A81DB464C200B07F76 /* Frameworks */,
 				E9B1C7A91DB464C200B07F76 /* Resources */,
+				56884328C41A1C8B5B8A559D /* [CP] Embed Pods Frameworks */,
+				437F79DCF7C3D53253783305 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +247,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437F79DCF7C3D53253783305 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayRxSwiftTests/Pods-PlayRxSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		489771850F1511B17C898303 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayRxSwift/Pods-PlayRxSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56884328C41A1C8B5B8A559D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayRxSwiftTests/Pods-PlayRxSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E2A3E986EAFA1E746D59417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayRxSwift/Pods-PlayRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9547F857760629F41AC637E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF03948F1B38F9CD7546D04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9B1C7931DB464C100B07F76 /* Sources */ = {
@@ -337,9 +482,14 @@
 		};
 		E9B1C7B51DB464C200B07F76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDDAD5674289F989CCD3E4F /* Pods-PlayRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlayRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raccoonism.PlayRxSwift;
@@ -350,9 +500,14 @@
 		};
 		E9B1C7B61DB464C200B07F76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B5BD47646C06F783D6EF35 /* Pods-PlayRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PlayRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raccoonism.PlayRxSwift;
@@ -363,6 +518,7 @@
 		};
 		E9B1C7B81DB464C200B07F76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D711440068F03F6FB93A8A47 /* Pods-PlayRxSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +534,7 @@
 		};
 		E9B1C7B91DB464C200B07F76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BD0486A3BA7BFB982C0637 /* Pods-PlayRxSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +567,7 @@
 				E9B1C7B61DB464C200B07F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9B1C7B71DB464C200B07F76 /* Build configuration list for PBXNativeTarget "PlayRxSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +576,7 @@
 				E9B1C7B91DB464C200B07F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
